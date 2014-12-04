@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SMACdb ACPtol="15" FinFeedMax="0" HPLimit="1" MACMetric="1" MotorEff="90" MtFeedMax="0" ReposFeedXY="894.855" ReposFeedZ="894.855" RghFeedMax="894.855" SpinMax="8888" TghFeedMax="0"/>
+<SMACdb ACPtol="15" FinFeedMax="0" HPLimit="1" MACMetric="1" MotorEff="90" MtFeedMax="0" ReposFeedXY="1111" ReposFeedZ="1111" RghFeedMax="1111" SpinMax="16666" TghFeedMax="0"/>

@@ -1,0 +1,5 @@
+syntax on
+colorscheme pablo
+map <F9> <ESC>:w<CR>:!C:\IMES\IMESc.exe % 192.168.255.18<CR>:q!<CR>
+imap <F12> <ESC>:w<CR>:!make<CR><INS>
+

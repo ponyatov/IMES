@@ -1,4 +1,8 @@
 *~
 *.swp
 *.exe
+SolidCAM12/THT
+SolidCAM12/TOOL_TYP.TMT
+SolidCAM12/iDataBase/*.MATdbx
+SolidCAM12/iDataBase/Haas*
 

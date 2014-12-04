@@ -1,0 +1,132 @@
+@pre_processor
+    ;Internal parms
+    doc_processor             = DOCUMENT
+    gpp_file_ext              = nc
+    tool_table_name           = 
+    max_g_name_length         = 0
+
+    ;Machine Initialize
+    abs_coord                 = Y
+    _4th_axes_around          = 
+    first_rotation_angle      = Z
+    _5th_axes_around          = 
+    iMachine_DB_name          = 
+
+    ;Program numbers
+    prog_num_min              = 1
+    prog_num_max              = 9999
+    prog_num_dflt             = 1000
+    get_prog_num              = N
+    proc_num_min              = 1
+    proc_num_max              = 9999
+    proc_num_dflt             = 2
+    get_proc_num              = N
+
+    ;Procedures control
+    full_gcode                = N
+    gen_procs                 = N
+    drill_proc                = N
+    gen_internal_proc         = N
+    optimize_jobs_loop        = Y
+    seq_sub_number            = Y
+    loop_exist                = N
+    same_sub_numbers          = N
+    init_var_after_split      = Y
+    software_transform        = Y
+    software_transform4x      = N
+
+    ;Home
+    num_homes                 = 50
+    home_data_at_start        = N
+    face_5_only               = N
+    origin_face1              = 1
+    x_dir_face1               = 1
+    origin_face2              = 1
+    x_dir_face2               = 1
+    origin_face3              = 1
+    x_dir_face3               = 1
+    origin_face4              = 1
+    x_dir_face4               = 1
+
+    ;Positioning
+    dflt_start                = 0.0000 0.0000 100.0000, 0.0000 0.0000 10.0000
+    dflt_end                  = 0.0000 0.0000 0.0000, 0.0000 0.0000 0.0000
+
+    ;Compensation
+    comp_exist                = N N
+    comp_x_start              = N
+    comp_by_arcs              = N
+    delta_for_TOOL_H          = 0
+    comp_by_zero_tool         = N
+
+    ;Line definitions
+
+    ;Arc definitions
+    arc_exist                 = Y Y
+    arc_3d                    = N
+    arc_3d_4x                 = N
+    arc_quadrants             = N
+    arc_gt_180                = Y
+    arc_max_chord             = 30.0000, 1.2000
+    arc_max_angle             = 3.0000
+    arc_max_radius            = 2000.0000, 80.0000
+    arc_min_length            = 0.0100, 0.0005
+    arc_zx_yz                 = N
+    arc_5x                    = N
+
+    ;Epsilon values
+    eps_angle                 = 0.0020
+    zero_value                = 0.0010, 0.0001
+    movement_precision        = 4
+    min_delt_arc_rad          = 0.0100, 0.0001
+    safety_dist               = 2.0000, 0.1000
+
+    ;Feed-Spin
+
+    ;Timing
+    time_factor               = 1.0000
+    block_time                = 0.0000
+
+    ;Coolant_options
+
+    ;Part options
+    options                   = iWorkOffset_Method INTEGER
+    options                   = iNumber_of_Fixtures INTEGER
+
+    ;Job options
+    job_opt_type              = bStopM00 LOGICAL
+    job_opt_type              = sStopMessage STRING
+    job_opt_type              = iG187_P INTEGER
+    job_opt_type              = nG187_E NUMERIC
+
+    ;Drill cycles
+    drill_type                = G81 Peck Y  Wait
+
+    ;Turning cycles
+
+    ;Threading cycles
+
+    ;Grooving cycles
+
+    ;Wire Cut cycles
+
+    ;Turning definitions
+
+    ;Fourth axis
+    set_dir                   = N
+
+    ;Sim Five axis
+    auto_angle_pair           = Y
+    other_angle_pair          = Y
+    angle_change_limit        = 30.0000
+    interplat_angle_step      = 3.0000
+    interplat_for_dist        = N
+    interplat_distance        = 5.0000, 0.1969
+    retract_distance          = 100.0000, 3.9370
+    center_rot_mac_num        = 20
+    enable_mx_edit            = N
+    pole_angle_tolerance      = 0.5700
+    use_machine_limits        = N
+
+    ;Wire Cut parameters
+endp

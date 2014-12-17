@@ -39,7 +39,7 @@ try:
 	raw_input('.')
 	sys.exit(0)
 except socket.timeout:
-	winsound.Beep(888,500)
+	winsound.Beep(888,1500)
 	print '\nERROR: %s:%s socket.timeout\n'%(CNCIP,PORT)
 	raw_input('.')
 	sys.exit(-1)

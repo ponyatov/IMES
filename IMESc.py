@@ -35,12 +35,12 @@ try:
 	# выходим с кодом 0 сообщая что ошибок не было
 	# (при каких-то сбоях/исключениях рантайм питона завершает программу с ненулевым кодом)
 	winsound.Beep(440,500)
-	print NC
-	raw_input('.')
+	#print NC
+	#raw_input('.')
 	sys.exit(0)
 except socket.timeout:
 	winsound.Beep(888,1500)
 	print '\nERROR: %s:%s socket.timeout\n'%(CNCIP,PORT)
-	raw_input('.')
+	#raw_input('.')
 	sys.exit(-1)
 

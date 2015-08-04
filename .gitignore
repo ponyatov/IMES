@@ -1,4 +1,18 @@
 *~
 *.swp
 *.exe
+gpptool/awea*
+gpptool/gmill*
+gpptool/gturn*
+gpptool/MAC*
+gpptool/MUL*
+gpptool/NTX*
+gpptool/OKU*
+gpptool/SODICK*
+gpptool/Hermle*
+gpptool/dmu*
+gpptool/table*
+gpptool/integrex*
+gpptool/TTC*
+gpptool/*.backup
 

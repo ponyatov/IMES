@@ -1,5 +1,5 @@
 # IMES 4820 support scripts::SolidCAM13
-## ветка для лицензионного SolidCAD 2013 + SW PA
+## ветка для лицензионного SolidCAD 2013 + SW PO
 (for) Samara State Aerospace University, Aerospace Construction Institute
 
 (by) Dmitry Ponyatov <dponyatov@gmail.com>

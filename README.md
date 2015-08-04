@@ -1,11 +1,11 @@
-IMES 4820 support scripts
-==============================
+# IMES 4820 support scripts::SolidCAM13
+## ветка для лицензионного SolidCAD 2013 + SW PA
 
-(for) Samara State Aerospac University, Aerospace Construction Institute
+(for) Samara State Aerospace University, Aerospace Construction Institute
 
 (by) Dmitry Ponyatov <dponyatov@gmail.com>
 
-# Пакет скриптов и файлов настроек для ЧПУ станка IMES 4820 
+### Пакет скриптов и файлов настроек для ЧПУ станка IMES 4820 
 
 Демон IMESd запускается в автостарте, вешается на 1234 порт (константа прописана
 в исходнике), принимает соединение, проверяет что идет обращение с разрешенных 

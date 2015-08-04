@@ -1,6 +1,7 @@
 # IMES 4820 support scripts::SolidCAM13
 ## ветка для лицензионного SolidCAD 2013 + SW PA
 (for) Samara State Aerospace University, Aerospace Construction Institute
+
 (by) Dmitry Ponyatov <dponyatov@gmail.com>
 ### Пакет скриптов и файлов настроек для ЧПУ станка IMES 4820 
 

@@ -1,0 +1,552 @@
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 3.16.6-tinycore (tc@box) (gcc version 4.9.1 (GCC) ) #777 SMP Thu Oct 16 09:42:42 UTC 2014
+Disabled fast string operations
+e820: BIOS-provided physical RAM map:
+BIOS-e820: [mem 0x0000000000000000-0x000000000009f7ff] usable
+BIOS-e820: [mem 0x000000000009f800-0x000000000009ffff] reserved
+BIOS-e820: [mem 0x00000000000ce000-0x00000000000cffff] reserved
+BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+BIOS-e820: [mem 0x0000000000100000-0x000000003f6fafff] usable
+BIOS-e820: [mem 0x000000003f6fb000-0x000000003f6fffff] ACPI NVS
+BIOS-e820: [mem 0x000000003f700000-0x000000003fffffff] reserved
+BIOS-e820: [mem 0x00000000fec10000-0x00000000fec1ffff] reserved
+BIOS-e820: [mem 0x00000000ff800000-0x00000000ffbfffff] reserved
+BIOS-e820: [mem 0x00000000fffffc00-0x00000000ffffffff] reserved
+Notice: NX (Execute Disable) protection missing in CPU!
+DMI not present or invalid.
+e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+e820: remove [mem 0x000a0000-0x000fffff] usable
+e820: last_pfn = 0x3f6fb max_arch_pfn = 0x100000
+MTRR default type: uncachable
+MTRR fixed ranges enabled:
+  00000-9FFFF write-back
+  A0000-BFFFF uncachable
+  C0000-C7FFF write-protect
+  C8000-EFFFF uncachable
+  F0000-FFFFF write-protect
+MTRR variable ranges enabled:
+  0 base 000000000 mask FC0000000 write-back
+  1 base 03F700000 mask FFFF00000 uncachable
+  2 base 03F800000 mask FFF800000 uncachable
+  3 disabled
+  4 disabled
+  5 disabled
+  6 disabled
+  7 disabled
+PAT not supported by CPU.
+initial memory mapped: [mem 0x00000000-0x00bfffff]
+Base memory trampoline at [c009b000] 9b000 size 16384
+init_memory_mapping: [mem 0x00000000-0x000fffff]
+ [mem 0x00000000-0x000fffff] page 4k
+init_memory_mapping: [mem 0x37000000-0x373fffff]
+ [mem 0x37000000-0x373fffff] page 2M
+init_memory_mapping: [mem 0x30000000-0x36ffffff]
+ [mem 0x30000000-0x36ffffff] page 2M
+init_memory_mapping: [mem 0x00100000-0x2fffffff]
+ [mem 0x00100000-0x003fffff] page 4k
+ [mem 0x00400000-0x2fffffff] page 2M
+init_memory_mapping: [mem 0x37400000-0x377fdfff]
+ [mem 0x37400000-0x377fdfff] page 4k
+BRK [0x00777000, 0x00777fff] PGTABLE
+RAMDISK: [mem 0x3f0a6000-0x3f6fafff]
+Allocated new RAMDISK: [mem 0x371a9000-0x377fd43a]
+Move RAMDISK from [mem 0x3f0a6000-0x3f6fa43a] to [mem 0x371a9000-0x377fd43a]
+ACPI: Early table checksum verification disabled
+ACPI BIOS Error (bug): A valid RSDP was not found (20140424/tbxfroot-211)
+126MB HIGHMEM available.
+887MB LOWMEM available.
+  mapped low ram: 0 - 377fe000
+  low ram: 0 - 377fe000
+BRK [0x00778000, 0x00778fff] PGTABLE
+Zone ranges:
+  DMA      [mem 0x00001000-0x00ffffff]
+  Normal   [mem 0x01000000-0x377fdfff]
+  HighMem  [mem 0x377fe000-0x3f6fafff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00001000-0x0009efff]
+  node   0: [mem 0x00100000-0x3f6fafff]
+On node 0 totalpages: 259737
+free_area_init_node: node 0, pgdat c06731c0, node_mem_map f69b9020
+  DMA zone: 32 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 3998 pages, LIFO batch:0
+  Normal zone: 1744 pages used for memmap
+  Normal zone: 223230 pages, LIFO batch:31
+  HighMem zone: 254 pages used for memmap
+  HighMem zone: 32509 pages, LIFO batch:7
+Using APIC driver default
+Reserving Intel graphics stolen memory at 0x3f700000-0x3fefffff
+smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Local APIC disabled by BIOS -- you can enable it with "lapic"
+APIC: disable apic facility
+APIC: switched to apic NOOP
+nr_irqs_gsi: 16
+PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+PM: Registered nosave memory: [mem 0x000a0000-0x000cdfff]
+PM: Registered nosave memory: [mem 0x000ce000-0x000cffff]
+PM: Registered nosave memory: [mem 0x000d0000-0x000dffff]
+PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+e820: [mem 0x40000000-0xfec0ffff] available for PCI devices
+Booting paravirtualized kernel on bare hardware
+setup_percpu: NR_CPUS:8 nr_cpumask_bits:8 nr_cpu_ids:1 nr_node_ids:1
+PERCPU: Embedded 12 pages/cpu @f69a7000 s27968 r0 d21184 u49152
+pcpu-alloc: s27968 r0 d21184 u49152 alloc=12*4096
+pcpu-alloc: [0] 0 
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 257961
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz loglevel=3 cde initrd=/boot/core.gz
+PID hash table entries: 4096 (order: 2, 16384 bytes)
+Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+Initializing CPU#0
+Initializing HighMem for node 0 (000377fe:0003f6fb)
+Initializing Movable for node 0 (00000000:00000000)
+Memory: 1016764K/1038948K available (4096K kernel code, 411K rwdata, 1100K rodata, 512K init, 460K bss, 22184K reserved, 130036K highmem)
+virtual kernel memory layout:
+    fixmap  : 0xfff16000 - 0xfffff000   ( 932 kB)
+    pkmap   : 0xff800000 - 0xffc00000   (4096 kB)
+    vmalloc : 0xf7ffe000 - 0xff7fe000   ( 120 MB)
+    lowmem  : 0xc0000000 - 0xf77fe000   ( 887 MB)
+      .init : 0xc067d000 - 0xc06fd000   ( 512 kB)
+      .data : 0xc0500603 - 0xc067bf40   (1518 kB)
+      .text : 0xc0100000 - 0xc0500603   (4097 kB)
+Checking if this processor honours the WP bit even in supervisor mode...Ok.
+Hierarchical RCU implementation.
+	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=1.
+RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+NR_IRQS:2304 nr_irqs:256 16
+CPU 0 irqstacks, hard=f6406000 soft=f6408000
+Console: colour VGA+ 80x25
+console [tty0] enabled
+tsc: Fast TSC calibration using PIT
+tsc: Detected 1799.789 MHz processor
+Calibrating delay loop (skipped), value calculated using timer frequency.. 3601.56 BogoMIPS (lpj=5999296)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys net_cls
+Initializing cgroup subsys blkio
+Initializing cgroup subsys perf_event
+Initializing cgroup subsys net_prio
+Disabled fast string operations
+mce: CPU supports 5 MCE banks
+Last level iTLB entries: 4KB 128, 2MB 0, 4MB 2
+Last level dTLB entries: 4KB 128, 2MB 0, 4MB 8, 1GB 0
+tlb_flushall_shift: 6
+Freeing SMP alternatives memory: 16K (c06fd000 - c0701000)
+smpboot: weird, boot CPU (#0) not listed by the BIOS
+smpboot: SMP motherboard not detected
+smpboot: Local APIC not detected. Using dummy APIC emulation.
+smpboot: SMP disabled
+Performance Events: 
+no APIC, boot with the "lapic" boot parameter to force-enable it.
+no hardware sampling interrupt available.
+p6 PMU driver.
+... version:                0
+... bit width:              32
+... generic registers:      2
+... value mask:             00000000ffffffff
+... max period:             000000007fffffff
+... fixed-purpose events:   0
+... event mask:             0000000000000003
+x86: Booted up 1 node, 1 CPUs
+smpboot: Total of 1 processors activated (3601.56 BogoMIPS)
+PM: Registering ACPI NVS region [mem 0x3f6fb000-0x3f6fffff] (20480 bytes)
+NET: Registered protocol family 16
+cpuidle: using governor ladder
+cpuidle: using governor menu
+PCI: PCI BIOS revision 2.10 entry at 0xfd964, last bus=2
+PCI: Using configuration type 1 for base access
+ACPI: Interpreter disabled.
+vgaarb: loaded
+SCSI subsystem initialized
+libata version 3.00 loaded.
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+Linux video capture interface: v2.00
+PCI: Probing PCI hardware
+PCI: root bus 00: using default resources
+PCI: Probing PCI hardware (bus 00)
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x00000000-0xffffffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: [8086:3580] type 00 class 0x060000
+pci 0000:00:00.1: [8086:3584] type 00 class 0x088000
+pci 0000:00:00.3: [8086:3585] type 00 class 0x088000
+pci 0000:00:02.0: [8086:3582] type 00 class 0x030000
+pci 0000:00:02.0: reg 0x10: [mem 0xe8000000-0xefffffff pref]
+pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe007ffff]
+pci 0000:00:02.0: reg 0x18: [io  0x1800-0x1807]
+pci 0000:00:02.0: supports D1
+vgaarb: setting as boot device: PCI:0000:00:02.0
+vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+pci 0000:00:02.1: [8086:3582] type 00 class 0x038000
+pci 0000:00:02.1: reg 0x10: [mem 0xf0000000-0xf7ffffff pref]
+pci 0000:00:02.1: reg 0x14: [mem 0xe0080000-0xe00fffff]
+pci 0000:00:02.1: supports D1
+pci 0000:00:1d.0: [8086:24c2] type 00 class 0x0c0300
+pci 0000:00:1d.0: reg 0x20: [io  0x1c00-0x1c1f]
+pci 0000:00:1d.1: [8086:24c4] type 00 class 0x0c0300
+pci 0000:00:1d.1: reg 0x20: [io  0x2000-0x201f]
+pci 0000:00:1d.7: [8086:24cd] type 00 class 0x0c0320
+pci 0000:00:1d.7: reg 0x10: [mem 0xe0100000-0xe01003ff]
+pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+pci 0000:00:1e.0: [8086:244e] type 01 class 0x060400
+pci 0000:00:1f.0: [8086:24c0] type 00 class 0x060100
+* The chipset may have PM-Timer Bug. Due to workarounds for a bug,
+* this clock source is slow. If you are sure your timer does not have
+* this bug, please use "acpi_pm_good" to disable the workaround
+pci 0000:00:1f.0: quirk: [io  0x1000-0x107f] claimed by ICH4 ACPI/GPIO/TCO
+pci 0000:00:1f.0: quirk: [io  0x1180-0x11bf] claimed by ICH4 GPIO
+pci 0000:00:1f.1: [8086:24cb] type 00 class 0x01018a
+pci 0000:00:1f.1: reg 0x10: [io  0x0000-0x0007]
+pci 0000:00:1f.1: reg 0x14: [io  0x0000-0x0003]
+pci 0000:00:1f.1: reg 0x18: [io  0x0000-0x0007]
+pci 0000:00:1f.1: reg 0x1c: [io  0x0000-0x0003]
+pci 0000:00:1f.1: reg 0x20: [io  0x2400-0x240f]
+pci 0000:00:1f.1: reg 0x24: [mem 0x00000000-0x000003ff]
+pci 0000:00:1f.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+pci 0000:00:1f.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+pci 0000:00:1f.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+pci 0000:00:1f.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+pci 0000:00:1f.3: [8086:24c3] type 00 class 0x0c0500
+pci 0000:00:1f.3: reg 0x20: [io  0x2800-0x281f]
+pci 0000:00:1f.5: [8086:24c5] type 00 class 0x040100
+pci 0000:00:1f.5: reg 0x10: [io  0x3000-0x30ff]
+pci 0000:00:1f.5: reg 0x14: [io  0x2c00-0x2c3f]
+pci 0000:00:1f.5: reg 0x18: [mem 0xe0100c00-0xe0100dff]
+pci 0000:00:1f.5: reg 0x1c: [mem 0xe0100800-0xe01008ff]
+pci 0000:00:1f.5: PME# supported from D0 D3hot D3cold
+pci 0000:02:08.0: [8086:103a] type 00 class 0x020000
+pci 0000:02:08.0: reg 0x10: [mem 0xe0200000-0xe0200fff]
+pci 0000:02:08.0: reg 0x14: [io  0x4000-0x403f]
+pci 0000:02:08.0: supports D1 D2
+pci 0000:02:08.0: PME# supported from D0 D1 D2 D3hot D3cold
+pci 0000:00:1e.0: PCI bridge to [bus 02] (subtractive decode)
+pci 0000:00:1e.0:   bridge window [io  0x4000-0x4fff]
+pci 0000:00:1e.0:   bridge window [mem 0xe0200000-0xe02fffff]
+pci 0000:00:1e.0:   bridge window [io  0x0000-0xffff] (subtractive decode)
+pci 0000:00:1e.0:   bridge window [mem 0x00000000-0xffffffff] (subtractive decode)
+pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 02
+pci 0000:00:1f.0: PIIX/ICH IRQ router [8086:24c0]
+PCI: pci_cache_line_size set to 64 bytes
+e820: reserve RAM buffer [mem 0x0009f800-0x0009ffff]
+e820: reserve RAM buffer [mem 0x3f6fb000-0x3fffffff]
+Switched to clocksource pit
+pnp: PnP ACPI: disabled
+PnPBIOS: Scanning system for PnP BIOS support...
+PnPBIOS: Found PnP BIOS installation structure at 0xc00f6db0
+PnPBIOS: PnP BIOS version 1.0, entry 0xf0000:0xb13f, dseg 0x400
+pnp 00:00: [io  0x0010-0x001f]
+pnp 00:00: [io  0x0024-0x0025]
+pnp 00:00: [io  0x0028-0x0029]
+pnp 00:00: [io  0x002c-0x002d]
+pnp 00:00: [io  0x002e-0x002f]
+pnp 00:00: [io  0x0030-0x0031]
+pnp 00:00: [io  0x0034-0x0035]
+pnp 00:00: [io  0x0038-0x0039]
+pnp 00:00: [io  0x003c-0x003d]
+pnp 00:00: [io  0x0050-0x0053]
+pnp 00:00: [io  0x0072-0x0073]
+pnp 00:00: [io  0x0074-0x0075]
+pnp 00:00: [io  0x0076-0x0077]
+pnp 00:00: [io  0x0080]
+pnp 00:00: [io  0x0090-0x0091]
+pnp 00:00: [io  0x0092]
+pnp 00:00: [io  0x0093-0x009f]
+pnp 00:00: [io  0x00a4-0x00a5]
+pnp 00:00: [io  0x00a8-0x00a9]
+pnp 00:00: [io  0x00ac-0x00ad]
+pnp 00:00: [io  0x00b0-0x00b1]
+pnp 00:00: [io  0x00b2-0x00b3]
+pnp 00:00: [io  0x00b4-0x00b5]
+pnp 00:00: [io  0x00b8-0x00b9]
+pnp 00:00: [io  0x00bc-0x00bd]
+pnp 00:00: [io  0x0290-0x0297]
+pnp 00:00: [io  0x0600-0x060f]
+pnp 00:00: [mem 0xfec00000-0xfec003ff]
+pnp 00:00: [mem 0xfec10000-0xfec1ffff]
+pnp 00:00: [mem 0xfed00000-0xfed033ff]
+pnp 00:00: [mem 0xffc00000-0xffffffff]
+system 00:00: [io  0x0290-0x0297] has been reserved
+system 00:00: [io  0x0600-0x060f] has been reserved
+system 00:00: [mem 0xfec00000-0xfec003ff] has been reserved
+system 00:00: [mem 0xfec10000-0xfec1ffff] has been reserved
+system 00:00: [mem 0xfed00000-0xfed033ff] has been reserved
+system 00:00: [mem 0xffc00000-0xffffffff] could not be reserved
+system 00:00: Plug and Play BIOS device, IDs PNP0c02 (active)
+pnp 00:01: [mem 0x00000000-0x0009ffff]
+pnp 00:01: [mem 0x000e8000-0x000fffff]
+pnp 00:01: [mem 0x00100000-0x3f5fffff]
+system 00:01: [mem 0x00000000-0x0009ffff] could not be reserved
+system 00:01: [mem 0x000e8000-0x000fffff] could not be reserved
+system 00:01: [mem 0x00100000-0x3f5fffff] could not be reserved
+system 00:01: Plug and Play BIOS device, IDs PNP0c01 (active)
+pnp 00:02: [io  0x0000-0x000f]
+pnp 00:02: [io  0x0081-0x008f]
+pnp 00:02: [io  0x00c0-0x00df]
+pnp 00:02: [dma 4]
+pnp 00:02: Plug and Play BIOS device, IDs PNP0200 (active)
+pnp 00:03: [io  0x0020-0x0021]
+pnp 00:03: [io  0x00a0-0x00a1]
+pnp 00:03: [irq 2]
+pnp 00:03: Plug and Play BIOS device, IDs PNP0000 (active)
+pnp 00:04: [io  0x0040-0x0043]
+pnp 00:04: [irq 0]
+pnp 00:04: Plug and Play BIOS device, IDs PNP0100 (active)
+pnp 00:05: [io  0x0070-0x0071]
+pnp 00:05: [irq 8]
+pnp 00:05: Plug and Play BIOS device, IDs PNP0b00 (active)
+pnp 00:06: [io  0x0060]
+pnp 00:06: [io  0x0064]
+pnp 00:06: [irq 1]
+pnp 00:06: Plug and Play BIOS device, IDs PNP0303 (active)
+pnp 00:07: [io  0x00f0-0x00ff]
+pnp 00:07: [irq 13]
+pnp 00:07: Plug and Play BIOS device, IDs PNP0c04 (active)
+pnp 00:08: [io  0x0061]
+pnp 00:08: Plug and Play BIOS device, IDs PNP0800 (active)
+pnp 00:09: [io  0x0cf8-0x0cff]
+pnp 00:09: Plug and Play BIOS device, IDs PNP0a03 (active)
+pnp 00:0a: [io  0x04d0-0x04d1]
+pnp 00:0a: [io  0x1000-0x105f]
+pnp 00:0a: [io  0x1060-0x107f]
+pnp 00:0a: [io  0x1180-0x11bf]
+pnp 00:0a: disabling [io  0x1000-0x105f] because it overlaps 0000:00:1f.0 BAR 13 [io  0x1000-0x107f]
+pnp 00:0a: disabling [io  0x1060-0x107f] because it overlaps 0000:00:1f.0 BAR 13 [io  0x1000-0x107f]
+system 00:0a: [io  0x04d0-0x04d1] has been reserved
+system 00:0a: [io  0x1180-0x11bf] has been reserved
+system 00:0a: Plug and Play BIOS device, IDs PNP0c02 (active)
+pnp 00:0b: [mem 0xffb80000-0xffbfffff]
+pnp 00:0b: [mem 0xffb00000-0xffb7ffff]
+pnp 00:0b: [mem 0xffa80000-0xffafffff]
+pnp 00:0b: [mem 0xffa00000-0xffa7ffff]
+pnp 00:0b: [mem 0xff980000-0xff9fffff]
+pnp 00:0b: [mem 0xff900000-0xff97ffff]
+pnp 00:0b: [mem 0xff880000-0xff8fffff]
+pnp 00:0b: [mem 0xff800000-0xff87ffff]
+pnp 00:0b: [mem 0xff000000-0xff7fffff]
+pnp 00:0b: Plug and Play BIOS device, IDs INT0800 (active)
+pnp 00:0d: [mem 0x000cde00-0x000cffff]
+system 00:0d: [mem 0x000cde00-0x000cffff] could not be reserved
+system 00:0d: Plug and Play BIOS device, IDs PNP0c02 (active)
+pnp 00:0e: [mem 0x000e0000-0x000e7fff]
+system 00:0e: [mem 0x000e0000-0x000e7fff] could not be reserved
+system 00:0e: Plug and Play BIOS device, IDs PNP0c02 (active)
+pnp 00:10: [io  0x02f8-0x02ff]
+pnp 00:10: [irq 3]
+pnp 00:10: Plug and Play BIOS device, IDs PNP0501 (active)
+pnp 00:11: [irq 12]
+pnp 00:11: Plug and Play BIOS device, IDs PNP0f13 (active)
+pnp 00:12: [io  0x03f8-0x03ff]
+pnp 00:12: [irq 4]
+pnp 00:12: Plug and Play BIOS device, IDs PNP0501 (active)
+pnp 00:13: [io  0x03f0-0x03f5]
+pnp 00:13: [io  0x03f7]
+pnp 00:13: [irq 6]
+pnp 00:13: [dma 2]
+pnp 00:13: Plug and Play BIOS device, IDs PNP0700 (active)
+pnp 00:15: [io  0x0378-0x037f]
+pnp 00:15: [irq 7]
+pnp 00:15: Plug and Play BIOS device, IDs PNP0400 (active)
+PnPBIOS: 19 nodes reported by PnP BIOS; 19 recorded by driver
+pci 0000:00:1f.1: BAR 5: assigned [mem 0x40000000-0x400003ff]
+pci 0000:00:1e.0: PCI bridge to [bus 02]
+pci 0000:00:1e.0:   bridge window [io  0x4000-0x4fff]
+pci 0000:00:1e.0:   bridge window [mem 0xe0200000-0xe02fffff]
+pci_bus 0000:00: resource 4 [io  0x0000-0xffff]
+pci_bus 0000:00: resource 5 [mem 0x00000000-0xffffffff]
+pci_bus 0000:02: resource 0 [io  0x4000-0x4fff]
+pci_bus 0000:02: resource 1 [mem 0xe0200000-0xe02fffff]
+pci_bus 0000:02: resource 4 [io  0x0000-0xffff]
+pci_bus 0000:02: resource 5 [mem 0x00000000-0xffffffff]
+NET: Registered protocol family 2
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP: reno registered
+UDP hash table entries: 512 (order: 2, 16384 bytes)
+UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+pci 0000:00:02.0: Video device with shadowed ROM
+PCI: setting IRQ 9 as level-triggered
+pci 0000:00:1d.0: found PCI INT A -> IRQ 9
+pci 0000:00:1d.0: sharing IRQ 9 with 0000:00:02.0
+PCI: setting IRQ 11 as level-triggered
+pci 0000:00:1d.1: found PCI INT B -> IRQ 11
+PCI: setting IRQ 10 as level-triggered
+pci 0000:00:1d.7: found PCI INT D -> IRQ 10
+pci 0000:00:1d.7: EHCI: BIOS handoff failed (BIOS bug?) 01010001
+pci 0000:02:08.0: Firmware left e100 interrupts enabled; disabling
+PCI: CLS 32 bytes, default 64
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 6484K (f71a9000 - f77fe000)
+apm: BIOS version 1.2 Flags 0x03 (Driver version 1.16ac)
+futex hash table entries: 256 (order: 2, 16384 bytes)
+NFS: Registering the id_resolver key type
+Key type id_resolver registered
+Key type id_legacy registered
+nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+fuse init (API version 7.23)
+msgmni has been set to 1744
+NET: Registered protocol family 38
+bounce: pool size: 64 pages
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+io scheduler noop registered
+io scheduler deadline registered (default)
+pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+intel_idle: does not run on family 6 model 13
+Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+00:10: ttyS1 at I/O 0x2f8 (irq = 3, base_baud = 115200) is a 16550A
+00:12: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+isapnp: Scanning for PnP cards...
+Non-volatile memory driver v1.3
+Hangcheck: starting hangcheck timer 0.9.1 (tick is 180 seconds, margin is 60 seconds).
+Hangcheck: Using getrawmonotonic().
+brd: module loaded
+mtip32xx Version 1.3.1
+Error creating debugfs parent
+zram: Created 1 device(s) ...
+VMware PVSCSI driver - version 1.0.5.0-k
+ata_piix 0000:00:1f.1: version 2.13
+ata_piix 0000:00:1f.1: assigned PCI INT A -> IRQ 10
+scsi0 : ata_piix
+scsi1 : ata_piix
+ata1: PATA max UDMA/100 cmd 0x1f0 ctl 0x3f6 bmdma 0x2400 irq 14
+ata2: PATA max UDMA/100 cmd 0x170 ctl 0x376 bmdma 0x2408 irq 15
+libphy: Fixed MDIO Bus: probed
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+PPP generic driver version 2.4.2
+PPP Deflate Compression module registered
+NET: Registered protocol family 24
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci-pci: EHCI PCI platform driver
+ehci-pci 0000:00:1d.7: found PCI INT D -> IRQ 10
+ehci-pci 0000:00:1d.7: EHCI Host Controller
+ehci-pci 0000:00:1d.7: new USB bus registered, assigned bus number 1
+ehci-pci 0000:00:1d.7: debug port 1
+ehci-pci 0000:00:1d.7: cache line size of 32 is not supported
+ehci-pci 0000:00:1d.7: irq 10, io mem 0xe0100000
+ehci-pci 0000:00:1d.7: USB 2.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 4 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+ohci-pci: OHCI PCI platform driver
+uhci_hcd: USB Universal Host Controller Interface driver
+uhci_hcd 0000:00:1d.0: found PCI INT A -> IRQ 9
+uhci_hcd 0000:00:1d.0: sharing IRQ 9 with 0000:00:02.0
+uhci_hcd 0000:00:1d.0: UHCI Host Controller
+uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+uhci_hcd 0000:00:1d.0: irq 9, io base 0x00001c00
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+uhci_hcd 0000:00:1d.1: found PCI INT B -> IRQ 11
+uhci_hcd 0000:00:1d.1: UHCI Host Controller
+uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+uhci_hcd 0000:00:1d.1: irq 11, io base 0x00002000
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 2 ports detected
+usbcore: registered new interface driver uas
+usbcore: registered new interface driver usb-storage
+usbcore: registered new interface driver ums-alauda
+usbcore: registered new interface driver ums-cypress
+usbcore: registered new interface driver ums-datafab
+usbcore: registered new interface driver ums_eneub6250
+usbcore: registered new interface driver ums-freecom
+usbcore: registered new interface driver ums-isd200
+usbcore: registered new interface driver ums-jumpshot
+usbcore: registered new interface driver ums-karma
+usbcore: registered new interface driver ums-onetouch
+usbcore: registered new interface driver ums-sddr09
+usbcore: registered new interface driver ums-sddr55
+usbcore: registered new interface driver ums-usbat
+i8042: PNP: PS/2 Controller [PNP0303,PNP0f13] at 0x60,0x64 irq 1,12
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+mousedev: PS/2 mouse device common for all mice
+usbcore: registered new interface driver appletouch
+usbcore: registered new interface driver bcm5974
+usbcore: registered new interface driver synaptics_usb
+rtc_cmos 00:05: rtc core: registered rtc_cmos as rtc0
+rtc_cmos 00:05: alarms up to one day, 114 bytes nvram
+intel_powerclamp: Intel powerclamp does not run on family 6 model 13
+softdog: Software Watchdog Timer: 0.08 initialized. soft_noboot=0 soft_margin=60 sec soft_panic=0 (nowayout=0)
+ledtrig-cpu: registered to indicate activity on CPUs
+Driver for HIFN 795x crypto accelerator chip has been successfully registered.
+hidraw: raw HID events driver (C) Jiri Kosina
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+Netfilter messages via NETLINK v0.30.
+nfnl_acct: registering with nfnetlink.
+ipip: IPv4 over IPv4 tunneling driver
+IPv4 over IPSec tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+Key type dns_resolver registered
+Using IPI No-Shortcut mode
+registered taskstats version 1
+rtc_cmos 00:05: setting system clock to 2015-08-06 11:20:41 UTC (1438860041)
+isapnp: No Plug & Play device found
+ata1.00: ATA-8: SAMSUNG HM121HC, LS100-10, max UDMA/100
+ata1.00: 234441648 sectors, multi 16: LBA48 
+input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+ata1.00: configured for UDMA/100
+scsi 0:0:0:0: Direct-Access     ATA      SAMSUNG HM121HC  0-10 PQ: 0 ANSI: 5
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+sd 0:0:0:0: [sda] 234441648 512-byte logical blocks: (120 GB/111 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+usb 1-1: new high-speed USB device number 2 using ehci-pci
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 4 ports detected
+usb 1-1.3: new high-speed USB device number 3 using ehci-pci
+usb-storage 1-1.3:1.0: USB Mass Storage device detected
+scsi2 : usb-storage 1-1.3:1.0
+Switched to clocksource tsc
+ sda: sda1 sda2 < sda5 >
+sd 0:0:0:0: [sda] Attached SCSI disk
+Freeing unused kernel memory: 512K (c067d000 - c06fd000)
+Write protecting the kernel text: 4100k
+Write protecting the kernel read-only data: 1104k
+usb 1-1.4: new full-speed USB device number 4 using ehci-pci
+loop: module loaded
+zram0: detected capacity change from 0 to 255868928
+random: mkswap urandom read with 38 bits of entropy available
+Adding 249868k swap on /dev/zram0.  Priority:-1 extents:1 across:249868k SSFS
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+input: PC Speaker as /devices/platform/pcspkr/input/input3
+intel_rng: FWH not detected
+microcode: CPU0 sig=0x6d6, pf=0x20, revision=0x17
+microcode: Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+e100: Intel(R) PRO/100 Network Driver, 3.5.24-k2-NAPI
+e100: Copyright(c) 1999-2006 Intel Corporation
+e100 0000:02:08.0: found PCI INT A -> IRQ 9
+e100 0000:02:08.0 eth0: addr 0xe0200000, irq 9, MAC addr 00:e0:4b:1b:04:1b
+input: ImPS/2 Logitech Wheel Mouse as /devices/platform/i8042/serio1/input/input2
+scsi 2:0:0:0: Direct-Access              Patriot Memory   PMAP PQ: 0 ANSI: 0 CCS
+sd 2:0:0:0: Attached scsi generic sg1 type 0
+sd 2:0:0:0: [sdb] 7827456 512-byte logical blocks: (4.00 GB/3.73 GiB)
+sd 2:0:0:0: [sdb] Write Protect is off
+sd 2:0:0:0: [sdb] Mode Sense: 23 00 00 00
+sd 2:0:0:0: [sdb] No Caching mode page found
+sd 2:0:0:0: [sdb] Assuming drive cache: write through
+ sdb:
+sd 2:0:0:0: [sdb] Attached SCSI removable disk
+random: nonblocking pool is initialized
+e100 0000:02:08.0 eth0: NIC Link is Up 100 Mbps Full Duplex

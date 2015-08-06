@@ -1,5 +1,5 @@
 # IMES 4820 support scripts::SolidCAM13
-## ветка для лицензионного SolidCAD 2013 + SW PO
+## ветка для лицензионного SolidCAM 2013 + SolidWorks Parts Only
 (for) Samara State Aerospace University, Aerospace Construction Institute
 
 (by) Dmitry Ponyatov <dponyatov@gmail.com>
@@ -19,4 +19,10 @@
 IP-адрес стойки и отсылает ЧПУ программу.
 
 В комплект включены файлы настроек и шаблонов для SolidCAM 2013 (lic. SSAU)
+
+### Скрипты и файлы для резервной копии HDD со станка
+
+Для резервного копирования используется утилита netcat (win64)
+
+HDDbackup/
 

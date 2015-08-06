@@ -1,0 +1,6 @@
+fdisk_sda.txt  = 065ecd84defebaaf6d3c10e287cf19f9
+sda.mbr  = 1f01144a6b43a6d35e8830776e921882
+
+sda1.img  = 6271a89362c8cfe7c49644c625dfce55
+sda5.img  = da5e2d5a637b35d1468b3bfc79201728
+

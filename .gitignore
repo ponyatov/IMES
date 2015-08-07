@@ -2,6 +2,7 @@
 *.swp
 *.exe
 *.backup
+*.bkp
 gpptool/awea*
 gpptool/gmill*
 gpptool/gturn*

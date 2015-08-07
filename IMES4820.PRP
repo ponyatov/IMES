@@ -1,27 +1,26 @@
 @pre_processor
     ;Internal parms
     doc_processor             = DOCUMENT
-    gpp_file_ext              = NC
+    gpp_file_ext              = nc
     tool_table_name           = 
     max_g_name_length         = 0
 
     ;Machine Initialize
-    abs_coord                 = N
-    rotate                    = N
-    mirror                    = N
+    abs_coord                 = Y
     _4th_axes_around          = 
     first_rotation_angle      = Z
     _5th_axes_around          = 
+    iMachine_DB_name          = 
 
     ;Program numbers
     prog_num_min              = 1
     prog_num_max              = 9999
     prog_num_dflt             = 1000
-    get_prog_num              = Y
+    get_prog_num              = N
     proc_num_min              = 1
     proc_num_max              = 9999
     proc_num_dflt             = 2
-    get_proc_num              = Y
+    get_proc_num              = N
 
     ;Procedures control
     full_gcode                = N
@@ -54,21 +53,17 @@
     dflt_end                  = 0.0000 0.0000 0.0000, 0.0000 0.0000 0.0000
 
     ;Compensation
-    comp_exist                = Y N
-    comp_arc_arc              = N
-    comp_arc_line             = Y
-    comp_line_line            = Y
-    next_angle                = N
+    comp_exist                = N N
     comp_x_start              = N
     comp_by_arcs              = N
     delta_for_TOOL_H          = 0
-    comp_by_zero_tool         = Y
+    comp_by_zero_tool         = N
 
     ;Line definitions
 
     ;Arc definitions
     arc_exist                 = Y Y
-    arc_3d                    = Y
+    arc_3d                    = N
     arc_3d_4x                 = N
     arc_quadrants             = N
     arc_gt_180                = Y
@@ -76,7 +71,8 @@
     arc_max_angle             = 3.0000
     arc_max_radius            = 2000.0000, 80.0000
     arc_min_length            = 0.0100, 0.0005
-    arc_zx_yz                 = Y
+    arc_zx_yz                 = N
+    arc_5x                    = N
 
     ;Epsilon values
     eps_angle                 = 0.0020
@@ -86,12 +82,10 @@
     safety_dist               = 2.0000, 0.1000
 
     ;Feed-Spin
-    spin_direction            = CW
 
     ;Timing
     time_factor               = 1.0000
     block_time                = 0.0000
-    change_tool_time          = 8.0000
 
     ;Coolant_options
 
@@ -106,15 +100,7 @@
     job_opt_type              = nG187_E NUMERIC
 
     ;Drill cycles
-    drill_type                = G81 Drilling Y 
-    drill_type                = G82 F_Drill Y  P_Dwell
-    drill_type                = G83 Peck Y  Q_Peck I_FirstPeck J_ReduceAmount K_MinimumDepth P_Dwell
-    drill_type                = G73 Peck Y  Q_Peck I_FirstPeck J_ReduceAmount K_MinimumDepth P_Dwell
-    drill_type                = G84 Tapping Y 
-    drill_type                = G84_Peck Tapping Y  Q_Peck
-    drill_type                = G85 Boring Y  P_Dwell
-    drill_type                = G86 Boring Y 
-    drill_type                = G87 Boring Y  P_Dwell
+    drill_type                = G81 Peck Y  Wait
 
     ;Turning cycles
 
@@ -138,10 +124,10 @@
     interplat_distance        = 5.0000, 0.1969
     retract_distance          = 100.0000, 3.9370
     center_rot_mac_num        = 20
-    min_inverse_feed          = 0.1000
     enable_mx_edit            = N
     pole_angle_tolerance      = 0.5700
     use_machine_limits        = N
 
     ;Wire Cut parameters
 endp
+

@@ -2,28 +2,23 @@
     ;Internal parms
     doc_processor             = DOCUMENT
     gpp_file_ext              = nc
-    tool_table_name           = IMES4820 
+    tool_table_name           = IMES4820
     max_g_name_length         = 0
 
     ;Machine Initialize
     abs_coord                 = Y
-;   _4th_axes_around          = 
-;   first_rotation_angle      = Z
-;   _5th_axes_around          = 
     iMachine_DB_name          = IMES4820
 
     ;Program numbers
     prog_num_min              = 1
     prog_num_max              = 9999
     prog_num_dflt             = 1000
-    get_prog_num              = N
     proc_num_min              = 1
     proc_num_max              = 9999
     proc_num_dflt             = 2
     get_proc_num              = N
 
     ;Procedures control
-    full_gcode                = N
     gen_procs                 = N
     drill_proc                = N
     gen_internal_proc         = N
@@ -36,21 +31,9 @@
     software_transform4x      = N
 
     ;Home
-    num_homes                 = 50
     home_data_at_start        = N
-    face_5_only               = N
-    origin_face1              = 1
-    x_dir_face1               = 1
-    origin_face2              = 1
-    x_dir_face2               = 1
-    origin_face3              = 1
-    x_dir_face3               = 1
-    origin_face4              = 1
-    x_dir_face4               = 1
 
     ;Positioning
-    dflt_start                = 0.0000 0.0000 100.0000, 0.0000 0.0000 10.0000
-    dflt_end                  = 0.0000 0.0000 0.0000, 0.0000 0.0000 0.0000
 
     ;Compensation
     comp_exist                = N N
@@ -130,4 +113,3 @@
 
     ;Wire Cut parameters
 endp
-

@@ -4,15 +4,14 @@
 # IP порт на котором висит IMESd
 PORT = 1234
 
+# #################
 import os,sys,time,socket,winsound
 
-# имя файла с программой передается в командной строке первым параметром
-NCFILE=sys.argv[1] # r'E:\IMES\FTP\F.nc'
+# имя файла с программой передается в командной строке [2] параметром
+# NCFILE=sys.argv[2] # r'E:\IMES\FTP\F.nc'
+NCFILE=sys.argv[1]
 # IP адрес станка
-try:
-    CNCIP = sys.argv[2]
-except IndexError:
-    CNCIP = '192.168.255.18' # IMES4820
+CNCIP = '192.168.255.18' # IMES4820
 
 # загружаем файл .nc
 # открываем файл программы на чтение и читаем файл

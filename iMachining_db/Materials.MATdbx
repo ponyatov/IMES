@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Materials/>
+<Materials><SMatdb CarbidePercent="100" ColbatPercent="60" EAMax="0" EAStp1="30" FinFz="0" ForceGap="0" HssPercent="40" MATEAmin="0" MatdbMetric="1" PremCarbidePercent="150" SaMax="0" TensileStrength="111" VcMax="0" iVersion="2" m_bTurboMode="0" m_dChipThickness="100" m_sMaterialFullPath="" m_sMaterialName="D16T"/></Materials>

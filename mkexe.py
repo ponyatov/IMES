@@ -3,7 +3,7 @@ import py2exe,os,sys
 os.system('rm -rf build dist')
 sys.argv.append('py2exe')
 setup(
-      console=['IMESc.py','IMESd.py'],
+    console=['IMESc.py','IMESd.py'],
      options={'py2exe':{
         'dist_dir':'.',
         'compressed':True,
@@ -15,4 +15,3 @@ setup(
 )
 os.system('rm -rf build')
 raw_input('.')
-

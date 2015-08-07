@@ -2,15 +2,15 @@
     ;Internal parms
     doc_processor             = DOCUMENT
     gpp_file_ext              = nc
-    tool_table_name           = 
+    tool_table_name           = IMES4820 
     max_g_name_length         = 0
 
     ;Machine Initialize
     abs_coord                 = Y
-    _4th_axes_around          = 
-    first_rotation_angle      = Z
-    _5th_axes_around          = 
-    iMachine_DB_name          = 
+;   _4th_axes_around          = 
+;   first_rotation_angle      = Z
+;   _5th_axes_around          = 
+    iMachine_DB_name          = IMES4820
 
     ;Program numbers
     prog_num_min              = 1

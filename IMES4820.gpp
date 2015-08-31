@@ -1435,6 +1435,7 @@ endp
     ; Handle output for spindle
     {nb,'M'iSpindleDir:mcode_f ' ' 'S'spin:integer_def_f}
     {nb,'G4 P2'}
+;dim@ M8 M08
     {nb,'M8'}
 endp
 

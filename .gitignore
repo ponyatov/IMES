@@ -1,6 +1,7 @@
 *~
 *.swp
 *.exe
+*.log
 *.backup
 *.bkp
 gpptool/awea*
